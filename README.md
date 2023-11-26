@@ -1,5 +1,7 @@
 MapleSoccer Legends
 
+[![Watch the video](https://img.youtube.com/vi/n1tdvyrjV_s/hqdefault.jpg)](https://www.youtube.com/watch?v=n1tdvyrjV_s)
+
 Inspired by the mechanics and visuals of the classic game Maple Story, MapleSoccer Legends offers a blend of soccer and RPG experience. Choose between legendary soccer players like Messi, Mbappé, or Ronaldo, battle monsters, earn Bitcoin, try your luck at the casino, and visit the sports store to buy new balls!
 Game Features
 

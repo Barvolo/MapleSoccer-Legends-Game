@@ -1,0 +1,94 @@
+#toolbar {
+    display: none;
+    position: fixed;
+    top: 5px;
+    left: 5px;
+    width: 800px;
+    height: 50px;
+    background: #202020;
+    border: 3px solid #5C5C5C;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    justify-content: space-around;
+    align-items: center;
+}
+
+#toolbar.show {
+    display: flex;
+}
+
+#toolbar div {
+    color: #fff;
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#toolbar #level-value, #toolbar #money-value {
+    color: #FFD700; /* gold color */
+    font-weight: bold;
+}
+
+
+.store-hidden {
+    display: none !important;
+  }
+  
+  .store-row.selected {
+    color: yellow;
+    font-size: 50px; /* Increase the font size */
+    font-weight: bold; /* Make the font bold */
+    text-shadow: 2px 2px 4px rgba(255, 255, 0, 1);
+  }
+  
+  
+  
+  
+  
+  #store {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 810px; /* Match the width of your game */
+    height: 600px; /* Match the height of your game */
+    background: url('store.png') no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  #store-table td {
+    padding: 0 100px;
+    text-align: center;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 30px; /* Adjust as necessary */
+    color: black;
+  }
+  
+  #store-viewport {
+    height: 500px; /* Set this to be appropriate for your game's height */
+    overflow-y: auto;
+    width: 100%;  /* Take up the full width of the store */
+}
+
+.slotGameFrame {
+  display: flex;  /* initially hidden */
+  width: 340px;  /* adjust width to fit your needs */
+  height: 540px; /* adjust height to fit your needs */
+  position: fixed; /* or relative, depending on your layout */
+  top: 20px; /* adjust top position */
+  left: 100px; /* adjust left position */
+  z-index: 9999; /* ensures the iframe is displayed on top */
+  transform: scale(0.6); /* scale down to 50% of original size */
+  transform-origin: 0 0; /* sets the origin for the transformation */
+}
+
+.hideSlotGame {
+  display: none !important;
+}
+
+  

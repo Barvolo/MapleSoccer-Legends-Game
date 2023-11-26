@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Slot Machine</title>
+    <link rel="stylesheet" type="text/css" href="slotstyle.css">
+</head>
+<body>
+    <div class="frame">
+        <video id="backgroundVideo" autoplay muted loop>
+            <source src="slotme.mp4" type="video/mp4">
+        </video>
+        <h1 id="msg">Welcome!</h1>
+        <h2 id="cred">Credits: 1000</h2>
+        <div class="outline">
+            <!-- Add two more rows of slot images -->
+            <div class="row">
+                <div class="box">
+                    <div class="slot-image spin-image"></div>
+                    <div class="slot-image result-image" style="display: none;"></div>
+                </div>
+                <div class="box">
+                    <div class="slot-image spin-image"></div>
+                    <div class="slot-image result-image" style="display: none;"></div>
+                </div>
+                <div class="box">
+                    <div class="slot-image spin-image"></div>
+                    <div class="slot-image result-image" style="display: none;"></div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="box">
+                    <div class="slot-image spin-image"></div>
+                    <div class="slot-image result-image" style="display: none;"></div>
+                </div>
+                <div class="box">
+                    <div class="slot-image spin-image"></div>
+                    <div class="slot-image result-image" style="display: none;"></div>
+                </div>
+                <div class="box">
+                    <div class="slot-image spin-image"></div>
+                    <div class="slot-image result-image" style="display: none;"></div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="box">
+                    <div class="slot-image spin-image"></div>
+                    <div class="slot-image result-image" style="display: none;"></div>
+                </div>
+                <div class="box">
+                    <div class="slot-image spin-image"></div>
+                    <div class="slot-image result-image" style="display: none;"></div>
+                </div>
+                <div class="box">
+                    <div class="slot-image spin-image"></div>
+                    <div class="slot-image result-image" style="display: none;"></div>
+                </div>
+            </div>
+        </div>
+        <button id="spinBtn" onclick="spin()">SPIN!</button>
+        <button id="leaveBtn">Leave</button>
+        <div class="outline">
+            <div class="box">
+                <div class="prize-image"></div>
+                <p>Lucky Draw!</p>
+                
+            </div>
+            
+        </div>
+
+    </div>
+    <script src="slot.js"></script>
+</body>
+</html>

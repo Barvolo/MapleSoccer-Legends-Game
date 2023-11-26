@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="stock.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="app-container">
+        <h1>Virtual Investment Portfolio</h1>
+        <div id="header">
+            <div id="stock-search-container">
+                <input type="text" id="stock-search" placeholder="Search for a stock">
+                <button id="search-button">Search</button>
+                <div id="stock-info"></div>
+            </div>
+            <div id="conversion">
+                <div id="conversion-input-container">
+                    <input type="number" id="conversion-amount" placeholder="Enter amount">
+                    <button onclick="convertCurrency()">Convert</button>
+                </div>
+                <select id="conversion-type" class="styled-select">
+                    <option value="btcToUsd">Bitcoin to USD</option>
+                    <option value="usdToBtc">USD to Bitcoin</option>
+                </select>
+                <p id="conversion-result"></p>
+            </div>
+            
+        </div>
+        <div id="messages">
+            <!-- Messages will be displayed here -->
+        </div>
+        <div id="portfolio" style="display: none;">
+            
+            <!-- Portfolio content goes here -->
+            
+        </div>
+        <button id="toggle-portfolio">Show Portfolio</button>
+    <script src="stock.js"></script>
+</body>
+</html>

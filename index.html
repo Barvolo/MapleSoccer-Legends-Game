@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/phaser@3/dist/phaser.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Exo:wght@400;700&display=swap">
+
+    
+</head>
+<body>
+    <div id="toolbar">
+        <div id="level">Level: <span id="level-value"></span></div>
+        <div id="money">Bitcoin: <span id="money-value"></span></div>
+    </div>
+    <div id="store" class="store-hidden">
+    <div id="store-viewport">  <!-- the viewport -->
+        <table id="store-table">
+            <!-- The table items will be generated dynamically -->
+        </table>
+    </div>
+</div>
+
+
+    <script src="selectionScene.js"></script>
+    
+    <script src="zone.js"></script>
+    <script src="Monster.js"></script>
+    <script src="game.js"></script> 
+    <script src="store.js"></script>
+    
+    <iframe id="slotGameFrame" class="hideSlotGame slotGameFrame" src=""></iframe>
+
+       
+    
+</body>
+</html>

@@ -1,0 +1,104 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #141414;
+    color: #fff;
+    padding: 20px;
+    max-width: 700px;
+    max-height: 700px;
+    margin: 0 auto;
+    overflow-y: auto; /* This will enable scrolling on Y-axis when content overflows */
+    display: flex; /* Makes the body a flex container */
+    flex-direction: column; /* Stacks the flex children (your divs) on top of each other */
+    align-items: center; /* Centers the flex children horizontally */
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: bold;
+    color: #e50914;
+}
+
+input, button {
+    padding: 10px;
+    border: none;
+    margin-top: 10px;
+    border-radius: 4px;
+}
+
+input {
+    width: calc(100% - 20px);
+}
+
+button {
+    background-color: #e50914;
+    color: #fff;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #f40612;
+}
+
+#stock-info, #portfolio, #messages {
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 4px;
+    background-color: #181818;
+}
+
+#portfolio {
+    display: none;
+}
+
+#header {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#stock-search-container, #conversion {
+    flex-basis: 45%; 
+    background-color: #181818;
+    padding: 20px;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+#conversion {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#conversion-type, #conversion-amount {
+    width: calc(100% - 20px);
+    margin-bottom: 10px;
+}
+
+#conversion button {
+    width: 100%;
+}
+
+select {
+    appearance: none;
+    background-color: #181818;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    font-family: 'Roboto', sans-serif;
+    width: 100%;
+    font-size: 1em;
+    border-radius: 4px;
+    outline: none;
+}
+
+select::-ms-expand {
+    display: none;
+}
+
+select:after {
+    content: "▼";
+    position: absolute;
+    right: 1em;
+    pointer-events: none;
+}
